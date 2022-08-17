@@ -59,12 +59,4 @@ class ProductManagerTest {
         assertArrayEquals(expected, actual);
     }
 
-    @Test
-    public void shouldFindTheSameText() {
-        Product[] expected = {book1, book2};
-        Product[] actual = manger.searchBy("Star Wars: The Old Republic: Revan");
-
-        assertArrayEquals(expected, actual);
-    }
-
 }
