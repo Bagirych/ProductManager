@@ -35,13 +35,6 @@ class ProductManagerTest {
         assertArrayEquals(expected, actual);
     }
 
-    @Test
-    public void shouldFindBookAuthor() {
-        Product[] expected = {book};
-        Product[] actual = manger.searchBy("Ernest Gary Gygax");
-
-        assertArrayEquals(expected, actual);
-    }
 
     @Test
     public void shouldFindSmartphoneProducer() {
