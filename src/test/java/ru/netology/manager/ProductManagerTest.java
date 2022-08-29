@@ -15,7 +15,7 @@ class ProductManagerTest {
     static Product smartphone = new Smartphone(2, "Iphone6S", 20000, "Apple");
     static Product smartphone1 = new Smartphone(5, "GalaxyA52", 10000, "Samsung");
     static Product book = new Book(25, "Dungeons and Dragons", 9999999, "Ernest Gary Gygax");
-    static Product book1 = new Book(0, "Eisenhorn Omnibus", 50, "Abnett Dan");
+    static Product book1 = new Book(1, "Eisenhorn Omnibus", 50, "Abnett Dan");
     static Product book2 = new Book(3, "Star Wars: The Old Republic: Revan", 123, "Drew Karpyshyn");
 
     @BeforeAll
