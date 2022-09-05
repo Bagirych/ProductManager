@@ -53,10 +53,10 @@ class ProductManagerTest {
     }
  @Test
     public void shouldFindTwoProducts() {
-        Product[] expected = {book1, book2};
+        Product[] expected = {};
         Product[] actual = manger.searchBy("ан");
 
-        assertArrayEquals(expected2, actual0);
+        assertArrayEquals(expected, actual);
     }
 
 }
