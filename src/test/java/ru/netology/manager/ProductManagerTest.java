@@ -51,6 +51,7 @@ class ProductManagerTest {
 
         assertArrayEquals(expected, actual);
     }
+    
  @Test
     public void shouldFindTwoProducts() {
         Product[] expected = {};
@@ -59,4 +60,19 @@ class ProductManagerTest {
         assertArrayEquals(expected, actual);
     }
 
+     @Test
+    public void shouldFindOneProduct() {
+        Product[] expected = {};
+        Product[] actual = manger.searchBy("Republic");
+
+        assertArrayEquals(expected, actual);
+    }
+    
+     @Test
+    public void shouldFindNoProducts() {
+        Product[] expected = {};
+        Product[] actual = manger.searchBy("Tower");
+
+        assertArrayEquals(expected, actual);
+    }
 }
