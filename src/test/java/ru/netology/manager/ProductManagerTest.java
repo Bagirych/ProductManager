@@ -49,7 +49,7 @@ class ProductManagerTest {
         Product[] expected = {smartphone1};
         Product[] actual = manger.searchBy("GalaxyA52");
 
-        assertArrayEquals(expected2, actual0);
+        assertArrayEquals(expected, actual);
     }
  @Test
     public void shouldFindTwoProducts() {
