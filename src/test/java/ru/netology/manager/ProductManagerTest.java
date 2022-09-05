@@ -49,14 +49,14 @@ class ProductManagerTest {
         Product[] expected = {smartphone1};
         Product[] actual = manger.searchBy("GalaxyA52");
 
-        assertArrayEquals(expected, actual);
+        assertArrayEquals(expected2, actual0);
     }
  @Test
     public void shouldFindTwoProducts() {
         Product[] expected = {book1, book2};
         Product[] actual = manger.searchBy("ан");
 
-        assertArrayEquals(expected, actual);
+        assertArrayEquals(expected2, actual0);
     }
 
 }
