@@ -52,4 +52,26 @@ class ProductManagerTest {
         assertArrayEquals(expected, actual);
     }
 
+    @Test
+    void searchByInvalidSmartphoneName() {
+        Product[] actual = manager.searchBy("HuaweiP50");
+        Product[] expected = {};
+        assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    void searchByInvalidAuthor() {
+        Product[] actual = manager.searchBy("King");
+        Product[] expected = {};
+        assertArrayEquals(expected, actual);
+
+    }
+    
+      @Test
+    void shouldRemoveById() {
+        repository.removeById(7);
+        Product[] actual = repository.findAll();
+        Product[] expected = new Product[]{product2, product5, product1, product3};
+        assertArrayEquals(expected, actual);
+    }
 }
