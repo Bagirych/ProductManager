@@ -52,20 +52,5 @@ class ProductManagerTest {
         assertArrayEquals(expected, actual);
     }
 
-    @Test
-    void searchByInvalidSmartphoneName() {
-        Product[] actual = manager.searchBy("HuaweiP50");
-        Product[] expected = {};
-        assertArrayEquals(expected, actual);
-    }
-
-    @Test
-    void searchByInvalidAuthor() {
-        Product[] actual = manager.searchBy("King");
-        Product[] expected = {};
-        assertArrayEquals(expected, actual);
-
-    }
-    
 
 }
